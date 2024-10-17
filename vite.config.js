@@ -8,9 +8,8 @@ export default defineConfig({
 	plugins: [
 		vue(),
 		eslint({
-			include: ['src/**/*.js', 'src/**/*.vue'], // Adjust this to include your desired file types
+			include: ['src/**/*.js', 'src/**/*.vue'],
 			exclude: ['node_modules/**'], // Exclude node_modules
-			// Optional: You can add additional ESLint options here if needed
 		}),
 	],
 	resolve: {

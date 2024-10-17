@@ -1,11 +1,8 @@
 <script setup>
 import { ref } from 'vue'
 
-defineProps({
-  msg: String,
-})
-
 const count = ref(0)
+const msg = ref('Hello Vite + Vue');
 </script>
 
 <template>
@@ -19,12 +16,7 @@ const count = ref(0)
     </p>
   </div>
 
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
+  <p>Is this working?!</p>
   <p>
     Learn more about IDE Support for Vue in the
     <a
@@ -38,6 +30,6 @@ const count = ref(0)
 
 <style scoped>
 .read-the-docs {
-  color: #888;
+  color: white;
 }
 </style>
