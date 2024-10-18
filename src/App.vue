@@ -4,20 +4,36 @@ import { RouterLink, RouterView, useRoute } from 'vue-router';
 </script>
 
 <template>
-  <HelloWorld msg="Vite + Vue" />
+  <header>
+    <div class="inner-column">
+      <div class="logo-container">
+        <div class="svg-logo">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" />
+          </svg>
+        </div>
+        <h1>Gardening Galore</h1>
+      </div>
+    </div>
+  </header>
+
+<main class="outlet">
+  <RouterView />
+</main>
+
+  <footer> </footer>
+
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+.svg-logo {
+  max-width: 40px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 </style>

@@ -12,7 +12,7 @@ main {
 	/* fill up available space which happens push the footer down to the bottom */
 }
 
-inner-column {
+.inner-column {
 	display: block;
 	/*	width: 98%; maybe? */
 	max-width: 1100px; /* could be a variable in settings */
