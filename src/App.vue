@@ -1,5 +1,4 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import { RouterLink, RouterView, useRoute } from 'vue-router';
 </script>
 
@@ -17,11 +16,15 @@ import { RouterLink, RouterView, useRoute } from 'vue-router';
     </div>
   </header>
 
-<main class="outlet">
-  <RouterView />
-</main>
+  <main class="outlet">
+    <RouterView />
+  </main>
 
-  <footer> </footer>
+  <footer>
+    <div class="inner-column">
+      <h2>Placeholder</h2>
+    </div>
+  </footer>
 
 </template>
 

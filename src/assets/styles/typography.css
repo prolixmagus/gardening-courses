@@ -55,6 +55,11 @@ h2 + p {
 	margin-top: 20px;
 }
 
+h2 + ul {
+	margin-top: 2em;
+}
+
+
 code {
 	font-family: monospace;
 	font-size: 1.1em;

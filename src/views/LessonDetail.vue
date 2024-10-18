@@ -1,3 +1,13 @@
+<script setup>
+
+</script>
+
 <template>
-    <h2> Hi brother</h2>
+    <section class="lesson-detail">
+        <div class="inner-column">
+            <h2>This section will have the lesson content</h2>
+            <!--<LessonComponent>-->
+            <!--<LessonComponent>-->
+        </div>
+    </section>
 </template>

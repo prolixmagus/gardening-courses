@@ -9,18 +9,22 @@ const router = createRouter({
 	routes: [
 		{
 			path: '/',
+			name: 'course-list',
 			component: CourseList,
 		},
 		{
 			path: '/courses/:courseId',
+			name: 'course-detail',
 			component: CourseDetail, // list of modules
 		},
 		{
 			path: '/courses/:courseId/modules/:moduleId',
+			name: 'module-detail',
 			component: ModuleDetail, // list of lessons
 		},
 		{
 			path: '/courses/:courseId/modules/:moduleId/lessons/:lessonId',
+			name: 'lesson-detail',
 			component: LessonDetail,
 		},
 	],
