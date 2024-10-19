@@ -1,13 +1,11 @@
 <script setup>
-
+import LessonContent from '../components/LessonContent.vue';
 </script>
 
 <template>
-    <section class="lesson-detail">
+    <section class="offerings">
         <div class="inner-column">
-            <h2>This section will have the lesson content</h2>
-            <!--<LessonComponent>-->
-            <!--<LessonComponent>-->
+            <LessonContent />
         </div>
     </section>
 </template>

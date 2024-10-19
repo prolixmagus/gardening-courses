@@ -9,6 +9,7 @@ let courseData = coursesStore.courses;
 </script>
 
 <template>
+  <h2 class="attention-voice">Courses</h2>
 
   <ul class="full-course-list">
     <li v-for="course in courseData"

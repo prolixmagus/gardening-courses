@@ -15,15 +15,75 @@
                         "lessons": [
                             {
                                 "id": 1,
-                                "title": "Understanding Soil Types",
-                                "paragraph": "The foundation of any garden is its soil. Understanding soil types and how to improve soil quality is key to a successful garden.",
-                                "image": "landscape.jpg"
+                                "title": "Benefits of Crop Rotation",
+                                "paragraph": "Crop rotation is an ancient practice that helps maintain soil fertility.",
+                                "image": "landscape.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                        },
+                                        {
+                                            "id": 3,
+                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Types Explained",
+                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Quality Tips",
+                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                        }
+                                    ]
+                                }
                             },
                             {
                                 "id": 2,
                                 "title": "Adding Organic Matter",
                                 "paragraph": "Organic matter is essential for healthy soil. Learn how to add compost and other organic materials to enrich your soil.",
-                                "image": "landscape.jpg"
+                                "image": "landscape.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                        },
+                                        {
+                                            "id": 3,
+                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Types Explained",
+                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Quality Tips",
+                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                        }
+                                    ]
+                                }
                             }
                         ]
                     },
@@ -37,13 +97,73 @@
                                 "id": 1,
                                 "title": "Understanding Local Climate",
                                 "paragraph": "Understanding your local climate is key to selecting plants that will thrive.",
-                                "image": "landscape.jpg"
+                                "image": "landscape.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                        },
+                                        {
+                                            "id": 3,
+                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Types Explained",
+                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Quality Tips",
+                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                        }
+                                    ]
+                                }
                             },
                             {
                                 "id": 2,
                                 "title": "Types of Plants",
                                 "paragraph": "This lesson explains the difference between annuals, perennials, and biennials.",
-                                "image": "landscape.jpg"
+                                "image": "landscape.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                        },
+                                        {
+                                            "id": 3,
+                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Types Explained",
+                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Soil Quality Tips",
+                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                        }
+                                    ]
+                                }
                             }
                         ]
                     }
@@ -51,47 +171,47 @@
             },
             {
                 "id": 2,
-                "title": "Advanced Vegetable Gardening",
-                "description": "Take your vegetable gardening skills to the next level with advanced techniques.",
-                "image": "landscape.jpg",
+                "title": "Vegetable Gardening Basics",
+                "description": "A course focused on growing your own vegetables from seed to harvest.",
+                "image": "vegetables.jpg",
                 "modules": [
                     {
                         "id": 1,
-                        "title": "Crop Rotation",
-                        "description": "Learn how rotating crops can improve soil health.",
-                        "previewImage": "landscape.jpg",
+                        "title": "Planning Your Garden",
+                        "description": "Learn how to plan your vegetable garden for optimal yield and minimal waste.",
+                        "previewImage": "garden_plan.jpg",
                         "lessons": [
                             {
                                 "id": 1,
-                                "title": "Benefits of Crop Rotation",
-                                "paragraph": "Crop rotation is an ancient practice that helps maintain soil fertility.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Nutrient Balance",
-                                "paragraph": "Certain crops deplete specific nutrients from the soil. Learn how to rotate crops to balance soil nutrients.",
-                                "image": "landscape.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "title": "Soilless Gardening",
-                        "description": "Explore methods like hydroponics for growing plants without soil.",
-                        "previewImage": "landscape.jpg",
-                        "lessons": [
-                            {
-                                "id": 1,
-                                "title": "Introduction to Hydroponics",
-                                "paragraph": "Hydroponics allows you to grow plants without soil by using nutrient-rich water.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Advantages of Soilless Methods",
-                                "paragraph": "This lesson covers the advantages of growing plants without soil.",
-                                "image": "landscape.jpg"
+                                "title": "Choosing the Right Location",
+                                "paragraph": "Picking the right location for your garden is crucial for healthy plant growth.",
+                                "image": "garden_location.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Ensure your garden receives at least 6-8 hours of direct sunlight per day."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "Consider factors such as water accessibility and soil quality when choosing a location."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "Garden Location Tips",
+                                            "url": "https://www.youtube.com/watch?v=example"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Sunlight Requirements for Plants",
+                                            "url": "https://example.com/sunlight-audio.mp3"
+                                        }
+                                    ]
+                                }
                             }
                         ]
                     }
@@ -99,95 +219,47 @@
             },
             {
                 "id": 3,
-                "title": "Herb Gardening Essentials",
-                "description": "Master the art of growing and using herbs in your garden.",
-                "image": "landscape.jpg",
+                "title": "Herb Gardening for Beginners",
+                "description": "A step-by-step guide to growing and using fresh herbs in your kitchen.",
+                "image": "herbs.jpg",
                 "modules": [
                     {
                         "id": 1,
-                        "title": "Choosing Herbs",
-                        "description": "Learn how to select herbs that will thrive in your garden.",
-                        "previewImage": "landscape.jpg",
+                        "title": "Choosing Herbs for Your Garden",
+                        "description": "An introduction to selecting the best herbs to grow based on your culinary preferences.",
+                        "previewImage": "herb_selection.jpg",
                         "lessons": [
                             {
                                 "id": 1,
-                                "title": "Culinary vs. Medicinal Herbs",
-                                "paragraph": "Herbs can be grown for culinary or medicinal purposes. Learn how to choose the right herbs for your needs.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Perennial and Annual Herbs",
-                                "paragraph": "This lesson covers perennial and annual herbs.",
-                                "image": "landscape.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "title": "Herb Care",
-                        "description": "Learn how to care for and maintain your herb garden.",
-                        "previewImage": "landscape.jpg",
-                        "lessons": [
-                            {
-                                "id": 1,
-                                "title": "Watering and Sunlight Needs",
-                                "paragraph": "Understanding watering and sunlight needs is crucial for healthy herbs.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Pruning for Growth",
-                                "paragraph": "Pruning your herbs helps promote healthy growth.",
-                                "image": "landscape.jpg"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": 4,
-                "title": "Garden Design Principles",
-                "description": "Learn the fundamentals of designing a beautiful garden.",
-                "image": "landscape.jpg",
-                "modules": [
-                    {
-                        "id": 1,
-                        "title": "Layout and Planning",
-                        "description": "Understand the basics of garden layout and planning.",
-                        "previewImage": "landscape.jpg",
-                        "lessons": [
-                            {
-                                "id": 1,
-                                "title": "Garden Styles and Layouts",
-                                "paragraph": "This lesson discusses different garden styles and layouts.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Creating a Garden Plan",
-                                "paragraph": "Learn how to create a garden plan that suits your space and needs.",
-                                "image": "landscape.jpg"
-                            }
-                        ]
-                    },
-                    {
-                        "id": 2,
-                        "title": "Plant Pairing",
-                        "description": "Learn how to pair plants for aesthetics and growth.",
-                        "previewImage": "landscape.jpg",
-                        "lessons": [
-                            {
-                                "id": 1,
-                                "title": "Color Theory in Gardening",
-                                "paragraph": "This lesson covers color theory and plant combinations.",
-                                "image": "landscape.jpg"
-                            },
-                            {
-                                "id": 2,
-                                "title": "Creating Harmony in the Garden",
-                                "paragraph": "Learn how to create harmony in your garden with complementary plants.",
-                                "image": "landscape.jpg"
+                                "title": "Popular Culinary Herbs",
+                                "paragraph": "Learn about herbs like basil, thyme, and rosemary, and how to grow them at home.",
+                                "image": "herb_examples.jpg",
+                                "content": {
+                                    "text": [
+                                        {
+                                            "id": 1,
+                                            "paragraph": "Basil is an easy-to-grow herb that thrives in warm weather."
+                                        },
+                                        {
+                                            "id": 2,
+                                            "paragraph": "Thyme is a drought-tolerant herb perfect for dry climates."
+                                        }
+                                    ],
+                                    "video": [
+                                        {
+                                            "id": 1,
+                                            "title": "How to Grow Basil",
+                                            "url": "https://www.youtube.com/watch?v=example"
+                                        }
+                                    ],
+                                    "audio": [
+                                        {
+                                            "id": 1,
+                                            "title": "Culinary Herb Tips",
+                                            "url": "https://example.com/herb-tips.mp3"
+                                        }
+                                    ]
+                                }
                             }
                         ]
                     }

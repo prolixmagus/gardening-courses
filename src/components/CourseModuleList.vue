@@ -15,6 +15,7 @@ const moduleList = coursesStore.getModulesList(route.params.courseId);
 </script>
 
 <template>
+  <h2 class="attention-voice">{{ foundCourse.title }}</h2>
 
   <ul class="module-list">
     <li v-for="module in moduleList"

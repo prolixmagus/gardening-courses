@@ -1,8 +1,12 @@
+<script setup>
+import LessonList from '../components/LessonList.vue';
+   
+</script>
+
 <template>
-    <section class="module-detail">
+    <section class="offerings">
         <div class="inner-column">
-            <h2>This section will have a descriptoin and list of lessons</h2>
-            <!--<LessonList />-->
+            <LessonList />
         </div>
     </section>
 </template>

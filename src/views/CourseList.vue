@@ -3,10 +3,8 @@
 </script>
 
 <template>
-    <section class="course-detail">
+    <section class="offerings">
         <div class="inner-column">
-            <h2>This section will be a list of modules for that particular course!</h2>
-
             <FullCourseList />
         </div>
     </section>

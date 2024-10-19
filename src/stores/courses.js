@@ -1,4 +1,4 @@
-import { ref, computed, reactive } from 'vue';
+import { reactive } from 'vue';
 import { defineStore } from 'pinia';
 import courseData from '../assets/data/courses.json';
 
@@ -16,7 +16,7 @@ export const useCoursesStore = defineStore('courses', () => {
 
 	function getModuleById(courseId, moduleId) {
 		const modulesList = getModulesList(courseId);
-		return modulesList.find((module) => module.id === parseInt(moduleId));
+		return modulesList.find((module) => module.id == parseInt(moduleId));
 	}
 
 	function getLessonsList(courseId, moduleId) {
