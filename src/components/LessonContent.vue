@@ -3,15 +3,16 @@
 import { computed } from 'vue';
 import { useCoursesStore } from '../stores/courses';
 import { useRoute } from 'vue-router';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
 const route = useRoute();
 
 const courseId = parseInt(route.params.courseId);
+const coursesStore = useCoursesStore(courseData[0], courseId)();
+
 const moduleId = parseInt(route.params.moduleId);
 const lessonId = parseInt(route.params.lessonId);
-
-const lesson = coursesStore.getLessonById(courseId, moduleId, lessonId);
+const lesson = coursesStore.getLessonByModuleAndLessonId(moduleId, lessonId);
 
 const paragraphs = computed(() => lesson?.content?.text || []);
 
@@ -27,7 +28,7 @@ const imagePath = lesson?.image ? new URL(`../assets/images/${lesson.image}`, im
         <img :src="imagePath" alt="placeholder-image" />
     </figure>
 
-    <p v-for="p in paragraphs" :key="p.id" > 
+    <p v-for="p in paragraphs" :key="p.id" >
         {{ p.paragraph }}
     </p>
 
