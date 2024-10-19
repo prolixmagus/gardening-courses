@@ -1,40 +1,36 @@
-import { reactive } from 'vue';
 import { defineStore } from 'pinia';
-import courseData from '../assets/data/courses.json';
+import { reactive } from 'vue';
 
-export const useCoursesStore = defineStore('courses', () => {
-	let courses = reactive(courseData[0].courses);
+export const useCoursesStore = (courseData, courseId) => {
+  return defineStore('course', () => {
+    let courses = reactive(courseData.courses);
 
-	function getCourseById(id) {
-		return courses.find((course) => course.id == parseInt(id));
-	}
+    const course = courses.find((course) => course.id == courseId);
 
-	function getModulesList(id) {
-		const foundCourse = getCourseById(id);
-		return foundCourse?.modules || [];
-	}
+    function getModulesList() {
+      return course?.modules || [];
+    }
 
-	function getModuleById(courseId, moduleId) {
-		const modulesList = getModulesList(courseId);
-		return modulesList.find((module) => module.id == parseInt(moduleId));
-	}
+    function getModuleByModuleId(moduleId) {
+      return getModulesList().find((module) => module.id == moduleId);
+    }
 
-	function getLessonsList(courseId, moduleId) {
-		const foundModule = getModuleById(courseId, moduleId);
-		return foundModule?.lessons || [];
-	}
+    function getLessonsListForModuleId(moduleId) {
+      const foundModule = getModuleByModuleId(moduleId);
+      return foundModule?.lessons || [];
+    }
 
-	function getLessonById(courseId, moduleId, lessonId) {
-		const lessonsList = getLessonsList(courseId, moduleId);
-		return lessonsList.find((lesson) => lesson.id === parseInt(lessonId));
-	}
+    function getLessonByModuleAndLessonId(moduleId, lessonId) {
+      const lessonsList = getLessonsListForModuleId(moduleId);
+      return lessonsList.find((lesson) => lesson.id === lessonId);
+    }
 
-	return {
-		courses,
-		getCourseById,
-		getModulesList,
-		getModuleById,
-		getLessonsList,
-		getLessonById,
-	};
-});
+    return {
+      course,
+      getModulesList,
+      getModuleByModuleId,
+      getLessonsListForModuleId,
+      getLessonByModuleAndLessonId,
+    };
+  });
+}

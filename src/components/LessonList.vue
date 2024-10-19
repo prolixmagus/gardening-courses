@@ -2,20 +2,19 @@
 
 import { useCoursesStore } from '../stores/courses';
 import { useRoute } from 'vue-router';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
 const route = useRoute();
 
-const courseId = route.params.courseId;
-const moduleId = route.params.moduleId;
+const courseId = parseInt(route.params.courseId);
+const coursesStore = useCoursesStore(courseData[0], courseId)();
 
-const foundCourse = coursesStore.getCourseById(courseId);
-const foundModule = coursesStore.getModuleById(courseId, moduleId)
+const moduleId = parseInt(route.params.moduleId);
 
-const lessonList = coursesStore.getLessonsList(courseId, moduleId);
+const foundCourse = coursesStore.course;
+const foundModule = coursesStore.getModuleByModuleId(moduleId)
 
-
-
+const lessonList = coursesStore.getLessonsListForModuleId(moduleId);
 
 </script>
 
