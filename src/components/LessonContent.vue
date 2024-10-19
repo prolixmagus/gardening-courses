@@ -35,7 +35,7 @@ const imagePath = lesson?.image ? new URL(`../assets/images/${lesson.image}`, im
 
 <style scoped>
 .headline {
-    margin-block: 1em 2em;
+    margin-block: 1.5em;
     max-width: 600px;
 }
 

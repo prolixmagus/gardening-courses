@@ -1,4 +1,5 @@
 <script setup>
+
 import LessonList from '../components/LessonList.vue';
    
 </script>

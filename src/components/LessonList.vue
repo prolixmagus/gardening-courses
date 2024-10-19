@@ -14,17 +14,14 @@ const foundModule = coursesStore.getModuleById(courseId, moduleId)
 
 const lessonList = coursesStore.getLessonsList(courseId, moduleId);
 
-
-
-
 </script>
 
 <template>
+
   <h2 class="attention-voice"> {{ foundModule.title }}</h2>
 
   <ul class="module-list">
-    <li v-for="lesson in lessonList"
-    :key="lesson.id">
+    <li v-for="lesson in lessonList":key="lesson.id">
       <RouterLink :to="`/courses/${foundCourse.id}/modules/${foundModule.id}/lessons/${lesson.id}`" class='course-link'>
         <h2 class="strong-voice">{{ lesson.title }} </h2>
       </RouterLink>

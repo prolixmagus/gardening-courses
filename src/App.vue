@@ -1,5 +1,15 @@
 <script setup>
 import { RouterLink, RouterView, useRoute } from 'vue-router';
+import { computed } from 'vue';
+
+const route = useRoute();
+
+//computed continuously updates the values if the parameters change
+
+const courseId = computed(() => route.params.courseId);
+const moduleId = computed(() => route.params.moduleId);
+const lessonId = computed(() => route.params.lessonId);
+
 </script>
 
 <template>
@@ -13,6 +23,19 @@ import { RouterLink, RouterView, useRoute } from 'vue-router';
         </div>
         <h1>Gardening Galore</h1>
       </div>
+      <nav>
+        <ul>
+          <li>
+            <RouterLink to="/">Courses</RouterLink>
+          </li>
+          <li v-if="moduleId">
+            <RouterLink :to="`/courses/${courseId}`">Course Modules</RouterLink>
+          </li>
+          <li v-if="lessonId">
+            <RouterLink :to="`/courses/${courseId}/modules/${moduleId}`">Module Lessons</RouterLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 

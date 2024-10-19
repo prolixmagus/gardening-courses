@@ -1,5 +1,7 @@
 <script setup>
-    import FullCourseList from '../components/FullCourseList.vue';
+
+import FullCourseList from '../components/FullCourseList.vue';
+
 </script>
 
 <template>
