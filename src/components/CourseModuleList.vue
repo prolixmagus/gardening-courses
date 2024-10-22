@@ -7,10 +7,13 @@ import courseData from '../assets/data/courses.json';
 const route = useRoute();
 
 const courseId = route.params.courseId;
-const coursesStore = useCoursesStore(courseData[0], courseId)();
+console.log(courseId);
 
-const foundCourse = coursesStore.course;
-const moduleList = coursesStore.getModulesList();
+const coursesStore = useCoursesStore();
+coursesStore.setCourses(courseData, courseId);
+
+const foundCourse = coursesStore.course
+const moduleList = coursesStore.getModulesList;
 
 
 
@@ -20,8 +23,7 @@ const moduleList = coursesStore.getModulesList();
   <h2 class="attention-voice">{{ foundCourse.title }}</h2>
 
   <ul class="module-list">
-    <li v-for="module in moduleList"
-    :key="module.id">
+    <li v-for="module in moduleList" :key="module.id">
       <RouterLink :to="`/courses/${foundCourse.id}/modules/${module.id}`" class='course-link'>
         <h2 class="strong-voice">{{ module.title }} </h2>
       </RouterLink>

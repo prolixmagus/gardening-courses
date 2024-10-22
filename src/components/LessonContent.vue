@@ -8,11 +8,11 @@ import courseData from '../assets/data/courses.json';
 const route = useRoute();
 
 const courseId = route.params.courseId;
-
-const coursesStore = useCoursesStore(courseData[0], courseId)();
-
 const moduleId = route.params.moduleId;
 const lessonId = route.params.lessonId;
+
+const coursesStore = useCoursesStore();
+coursesStore.setCourses(courseData, courseId);
 
 const lesson = coursesStore.getLessonByModuleIdAndLessonId(moduleId, lessonId);
 

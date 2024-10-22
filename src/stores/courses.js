@@ -1,37 +1,42 @@
 import { defineStore } from 'pinia';
-import { reactive } from 'vue';
+import { ref, reactive, computed } from 'vue';
 
-//wrapping defineStore in closure
-export const useCoursesStore = (courseData, courseId) => {
-	return defineStore('courses', () => {
-		let courses = reactive(courseData.courses);
+export const useCoursesStore = defineStore('courses', () => {
+	const courses = reactive([]);
+	const course = ref(null);
 
-		const course = courses.find((course) => course.id == courseId);
+	function setCourses(courseData, courseId) {
+		courses.value = courseData[0].courses;
+		console.log(courses.value);
+		course.value = courses.value.find((course) => course.id == courseId);
+		console.log(course.value);
+	}
 
-		function getModulesList() {
-			return course?.modules || [];
-		}
-
-		function getModuleByModuleId(moduleId) {
-			return getModulesList().find((module) => module.id == moduleId);
-		}
-
-		function getLessonsListForModuleId(moduleId) {
-			const foundModule = getModuleByModuleId(moduleId);
-			return foundModule?.lessons || [];
-		}
-
-		function getLessonByModuleIdAndLessonId(moduleId, lessonId) {
-			const lessonsList = getLessonsListForModuleId(moduleId);
-			return lessonsList.find((lesson) => lesson.id === lessonId);
-		}
-
-		return {
-			course,
-			getModulesList,
-			getModuleByModuleId,
-			getLessonsListForModuleId,
-			getLessonByModuleIdAndLessonId,
-		};
+	const getModulesList = computed(() => {
+		return course.value?.modules || [];
 	});
-};
+
+	const getModuleByModuleId = (moduleId) => {
+		return getModulesList.value.find((module) => module.id == moduleId);
+	};
+
+	const getLessonsListForModuleId = (moduleId) => {
+		const foundModule = getModuleByModuleId(moduleId);
+		return foundModule?.lessons || [];
+	};
+
+	const getLessonByModuleIdAndLessonId = (moduleId, lessonId) => {
+		const lessonsList = getLessonsListForModuleId(moduleId);
+		return lessonsList.find((lesson) => lesson.id == lessonId);
+	};
+
+	return {
+		courses,
+		course,
+		setCourses,
+		getModulesList,
+		getModuleByModuleId,
+		getLessonsListForModuleId,
+		getLessonByModuleIdAndLessonId,
+	};
+});

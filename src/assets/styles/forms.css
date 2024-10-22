@@ -1,8 +1,12 @@
 
-form {
+/* form {
 	border: 10px solid red;
-}
+} */
 
-.button {
-	/* to button - or not to button... */
+
+.searchbar {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding-block: 10px;
 }

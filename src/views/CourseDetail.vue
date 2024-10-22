@@ -1,7 +1,7 @@
 <script setup>
 
 import CourseModuleList from '../components/CourseModuleList.vue';
-   
+
 </script>
 
 <template>

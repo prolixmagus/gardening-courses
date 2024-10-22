@@ -24,7 +24,7 @@ const lessonId = computed(() => parseInt(route.params.lessonId));
         <h1>Gardening Galore</h1>
       </div>
       <nav>
-        <ul>
+        <ul class="search-options">
           <li>
             <RouterLink to="/">Courses</RouterLink>
           </li>
@@ -52,6 +52,11 @@ const lessonId = computed(() => parseInt(route.params.lessonId));
 </template>
 
 <style scoped>
+
+.search-options {
+  display: flex;
+  gap: 15px;
+}
 
 .svg-logo {
   max-width: 40px;

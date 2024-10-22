@@ -7,9 +7,9 @@ const route = useRoute();
 
 
 const courseId = route.params.courseId;
-const coursesStore = useCoursesStore(courseData[0], courseId)();
-
 const moduleId = route.params.moduleId;
+const coursesStore = useCoursesStore();
+coursesStore.setCourses(courseData, courseId);
 
 const foundCourse = coursesStore.course;
 const foundModule = coursesStore.getModuleByModuleId(moduleId);
