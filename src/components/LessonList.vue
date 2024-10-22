@@ -1,18 +1,20 @@
 <script setup>
-
 import { useCoursesStore } from '../stores/courses';
 import { useRoute } from 'vue-router';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
 const route = useRoute();
 
+
 const courseId = route.params.courseId;
+const coursesStore = useCoursesStore(courseData[0], courseId)();
+
 const moduleId = route.params.moduleId;
 
-const foundCourse = coursesStore.getCourseById(courseId);
-const foundModule = coursesStore.getModuleById(courseId, moduleId)
+const foundCourse = coursesStore.course;
+const foundModule = coursesStore.getModuleByModuleId(moduleId);
 
-const lessonList = coursesStore.getLessonsList(courseId, moduleId);
+const lessonList = coursesStore.getLessonsListForModuleId(moduleId);
 
 </script>
 
@@ -21,7 +23,7 @@ const lessonList = coursesStore.getLessonsList(courseId, moduleId);
   <h2 class="attention-voice"> {{ foundModule.title }}</h2>
 
   <ul class="module-list">
-    <li v-for="lesson in lessonList":key="lesson.id">
+    <li v-for="lesson in lessonList" :key="lesson.id">
       <RouterLink :to="`/courses/${foundCourse.id}/modules/${foundModule.id}/lessons/${lesson.id}`" class='course-link'>
         <h2 class="strong-voice">{{ lesson.title }} </h2>
       </RouterLink>

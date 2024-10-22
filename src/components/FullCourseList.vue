@@ -1,9 +1,11 @@
 <script setup>
 
-import { useCoursesStore } from '../stores/courses';
+import { reactive } from 'vue';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
-let courseData = coursesStore.courses;
+const courses = reactive(courseData[0].courses);
+
+console.log(courses);
 
 
 </script>
@@ -12,7 +14,7 @@ let courseData = coursesStore.courses;
   <h2 class="attention-voice">Courses</h2>
 
   <ul class="full-course-list">
-    <li v-for="course in courseData"
+    <li v-for="course in courses"
     :key="course.id">
       <RouterLink :to="`/courses/${course.id}`" class='course-link'>
         <h2 class="strong-voice">{{ course.title }} </h2>

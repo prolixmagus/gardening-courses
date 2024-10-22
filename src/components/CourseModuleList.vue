@@ -1,14 +1,16 @@
 <script setup>
 
-import { useCoursesStore } from '../stores/courses';
 import { useRoute } from 'vue-router';
+import { useCoursesStore } from '../stores/courses';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
 const route = useRoute();
 
-const foundCourse = coursesStore.getCourseById(route.params.courseId);
+const courseId = route.params.courseId;
+const coursesStore = useCoursesStore(courseData[0], courseId)();
 
-const moduleList = coursesStore.getModulesList(route.params.courseId);
+const foundCourse = coursesStore.course;
+const moduleList = coursesStore.getModulesList();
 
 
 

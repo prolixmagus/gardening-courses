@@ -3,20 +3,22 @@
 import { computed } from 'vue';
 import { useCoursesStore } from '../stores/courses';
 import { useRoute } from 'vue-router';
+import courseData from '../assets/data/courses.json';
 
-const coursesStore = useCoursesStore();
 const route = useRoute();
 
-const courseId = parseInt(route.params.courseId);
-const moduleId = parseInt(route.params.moduleId);
-const lessonId = parseInt(route.params.lessonId);
+const courseId = route.params.courseId;
 
-const lesson = coursesStore.getLessonById(courseId, moduleId, lessonId);
+const coursesStore = useCoursesStore(courseData[0], courseId)();
+
+const moduleId = route.params.moduleId;
+const lessonId = route.params.lessonId;
+
+const lesson = coursesStore.getLessonByModuleIdAndLessonId(moduleId, lessonId);
 
 const paragraphs = computed(() => lesson?.content?.text || []);
 
 const imagePath = lesson?.image ? new URL(`../assets/images/${lesson.image}`, import.meta.url).href : '';
-
 </script>
 
 <template>
@@ -27,10 +29,9 @@ const imagePath = lesson?.image ? new URL(`../assets/images/${lesson.image}`, im
         <img :src="imagePath" alt="placeholder-image" />
     </figure>
 
-    <p v-for="p in paragraphs" :key="p.id" > 
+    <p v-for="(p, index) in paragraphs" :key="`${p.paragraph.slice(0, 5)}-${index}`"> 
         {{ p.paragraph }}
     </p>
-
 </template>
 
 <style scoped>

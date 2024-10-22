@@ -2,47 +2,44 @@
     {
         "courses": [
             {
-                "id": 1,
+                "id": "101",
                 "title": "Introduction to Gardening",
                 "description": "A beginner's guide to gardening covering basic techniques and plant care.",
                 "image": "landscape.jpg",
                 "modules": [
                     {
-                        "id": 1,
+                        "id": "101-mod-1",
                         "title": "Soil Preparation",
                         "description": "Learn how to prepare your soil for optimal plant growth.",
                         "previewImage": "landscape.jpg",
                         "lessons": [
                             {
-                                "id": 1,
+                                "id": "101-mod-1-l1",
                                 "title": "Benefits of Crop Rotation",
                                 "paragraph": "Crop rotation is an ancient practice that helps maintain soil fertility.",
                                 "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
                                             "paragraph": "Soil is composed of minerals, organic matter, water, and air."
                                         },
                                         {
-                                            "id": 2,
                                             "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
                                         },
                                         {
-                                            "id": 3,
                                             "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
+                                            "id": "101-mod-1-v1",
                                             "title": "Soil Types Explained",
                                             "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
+                                            "id": "101-mod-1-a1",
                                             "title": "Soil Quality Tips",
                                             "url": "https://example.com/soil-quality-audio.mp3"
                                         }
@@ -50,37 +47,34 @@
                                 }
                             },
                             {
-                                "id": 2,
+                                "id": "101-mod-1-l2",
                                 "title": "Adding Organic Matter",
                                 "paragraph": "Organic matter is essential for healthy soil. Learn how to add compost and other organic materials to enrich your soil.",
                                 "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
-                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                            "paragraph": "Organic matter improves soil structure and nutrient retention."
                                         },
                                         {
-                                            "id": 2,
-                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                            "paragraph": "Compost is a great way to add organic matter to your soil."
                                         },
                                         {
-                                            "id": 3,
-                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                            "paragraph": "Mulching with organic materials can also benefit your garden."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Types Explained",
-                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                            "id": "101-mod-2-v1",
+                                            "title": "How to Make Compost",
+                                            "url": "https://www.youtube.com/watch?v=example2"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Quality Tips",
-                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                            "id": "101-mod-2-a1",
+                                            "title": "Benefits of Organic Matter",
+                                            "url": "https://example.com/organic-matter-audio.mp3"
                                         }
                                     ]
                                 }
@@ -88,79 +82,70 @@
                         ]
                     },
                     {
-                        "id": 2,
+                        "id": "102",
                         "title": "Plant Selection",
                         "description": "Choosing the right plants for your garden based on climate and soil conditions.",
                         "previewImage": "landscape.jpg",
                         "lessons": [
                             {
-                                "id": 1,
+                                "id": "102-mod-1",
                                 "title": "Understanding Local Climate",
                                 "paragraph": "Understanding your local climate is key to selecting plants that will thrive.",
                                 "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
-                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                            "paragraph": "Climate affects the growth and survival of plants."
                                         },
                                         {
-                                            "id": 2,
-                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
-                                        },
-                                        {
-                                            "id": 3,
-                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                            "paragraph": "Consider temperature ranges and rainfall patterns when selecting plants."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Types Explained",
-                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                            "id": "102-mod-1-v1",
+                                            "title": "Climate Zones Explained",
+                                            "url": "https://www.youtube.com/watch?v=example3"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Quality Tips",
-                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                            "id": "102-mod-1-a1",
+                                            "title": "Local Climate Insights",
+                                            "url": "https://example.com/local-climate-audio.mp3"
                                         }
                                     ]
                                 }
                             },
                             {
-                                "id": 2,
+                                "id": "102-mod-2",
                                 "title": "Types of Plants",
                                 "paragraph": "This lesson explains the difference between annuals, perennials, and biennials.",
                                 "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
-                                            "paragraph": "Soil is composed of minerals, organic matter, water, and air."
+                                            "paragraph": "Annuals complete their life cycle in one year."
                                         },
                                         {
-                                            "id": 2,
-                                            "paragraph": "The three main types of soil are sandy, clay, and loamy. Sandy soil drains quickly but doesn't retain nutrients well."
+                                            "paragraph": "Perennials come back year after year."
                                         },
                                         {
-                                            "id": 3,
-                                            "paragraph": "Clay soil holds water but can become compacted, making it difficult for roots to grow. Loamy soil, a balanced mix of sand, silt, and clay, is ideal for most gardens."
+                                            "paragraph": "Biennials take two years to complete their life cycle."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Types Explained",
-                                            "url": "https://www.youtube.com/watch?v=o-iIvfD47Aw"
+                                            "id": "102-mod-2-v1",
+                                            "title": "Annual vs Perennial Plants",
+                                            "url": "https://www.youtube.com/watch?v=example4"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
-                                            "title": "Soil Quality Tips",
-                                            "url": "https://example.com/soil-quality-audio.mp3"
+                                            "id": "102-mod-2-a1",
+                                            "title": "Plant Types Overview",
+                                            "url": "https://example.com/plant-types-audio.mp3"
                                         }
                                     ]
                                 }
@@ -170,93 +155,73 @@
                 ]
             },
             {
-                "id": 2,
-                "title": "Vegetable Gardening Basics",
-                "description": "A course focused on growing your own vegetables from seed to harvest.",
-                "image": "vegetables.jpg",
+                "id": "102",
+                "title": "Advanced Gardening Techniques",
+                "description": "A deeper dive into specialized gardening techniques.",
+                "image": "landscape.jpg",
                 "modules": [
                     {
-                        "id": 1,
-                        "title": "Planning Your Garden",
-                        "description": "Learn how to plan your vegetable garden for optimal yield and minimal waste.",
-                        "previewImage": "garden_plan.jpg",
+                        "id": "201",
+                        "title": "Irrigation Techniques",
+                        "description": "Learn different methods of irrigation for your garden.",
+                        "previewImage": "landscape.jpg",
                         "lessons": [
                             {
-                                "id": 1,
-                                "title": "Choosing the Right Location",
-                                "paragraph": "Picking the right location for your garden is crucial for healthy plant growth.",
-                                "image": "garden_location.jpg",
+                                "id": "201-mod-1",
+                                "title": "Installing Drip Irrigation",
+                                "paragraph": "Drip irrigation is an efficient watering method.",
+                                "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
-                                            "paragraph": "Ensure your garden receives at least 6-8 hours of direct sunlight per day."
+                                            "paragraph": "Drip irrigation delivers water directly to the plant roots."
                                         },
                                         {
-                                            "id": 2,
-                                            "paragraph": "Consider factors such as water accessibility and soil quality when choosing a location."
+                                            "paragraph": "It's a great way to conserve water."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
-                                            "title": "Garden Location Tips",
-                                            "url": "https://www.youtube.com/watch?v=example"
+                                            "id": "201-mod-1-v1",
+                                            "title": "Drip Irrigation Setup",
+                                            "url": "https://www.youtube.com/watch?v=example5"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
-                                            "title": "Sunlight Requirements for Plants",
-                                            "url": "https://example.com/sunlight-audio.mp3"
+                                            "id": "201-mod-1-a1",
+                                            "title": "Irrigation Tips",
+                                            "url": "https://example.com/irrigation-tips-audio.mp3"
                                         }
                                     ]
                                 }
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": 3,
-                "title": "Herb Gardening for Beginners",
-                "description": "A step-by-step guide to growing and using fresh herbs in your kitchen.",
-                "image": "herbs.jpg",
-                "modules": [
-                    {
-                        "id": 1,
-                        "title": "Choosing Herbs for Your Garden",
-                        "description": "An introduction to selecting the best herbs to grow based on your culinary preferences.",
-                        "previewImage": "herb_selection.jpg",
-                        "lessons": [
+                            },
                             {
-                                "id": 1,
-                                "title": "Popular Culinary Herbs",
-                                "paragraph": "Learn about herbs like basil, thyme, and rosemary, and how to grow them at home.",
-                                "image": "herb_examples.jpg",
+                                "id": "201-mod-2",
+                                "title": "Rainwater Harvesting",
+                                "paragraph": "Collecting rainwater for garden use.",
+                                "image": "landscape.jpg",
                                 "content": {
                                     "text": [
                                         {
-                                            "id": 1,
-                                            "paragraph": "Basil is an easy-to-grow herb that thrives in warm weather."
+                                            "paragraph": "Rainwater harvesting is an eco-friendly practice."
                                         },
                                         {
-                                            "id": 2,
-                                            "paragraph": "Thyme is a drought-tolerant herb perfect for dry climates."
+                                            "paragraph": "It reduces reliance on municipal water sources."
                                         }
                                     ],
                                     "video": [
                                         {
-                                            "id": 1,
-                                            "title": "How to Grow Basil",
-                                            "url": "https://www.youtube.com/watch?v=example"
+                                            "id": "201-mod-2-v1",
+                                            "title": "How to Harvest Rainwater",
+                                            "url": "https://www.youtube.com/watch?v=example6"
                                         }
                                     ],
                                     "audio": [
                                         {
-                                            "id": 1,
-                                            "title": "Culinary Herb Tips",
-                                            "url": "https://example.com/herb-tips.mp3"
+                                            "id": "201-mod-2-a1",
+                                            "title": "Rainwater Benefits",
+                                            "url": "https://example.com/rainwater-benefits-audio.mp3"
                                         }
                                     ]
                                 }

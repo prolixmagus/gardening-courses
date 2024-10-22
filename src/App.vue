@@ -1,14 +1,14 @@
 <script setup>
-import { RouterLink, RouterView, useRoute } from 'vue-router';
 import { computed } from 'vue';
+import { RouterLink, RouterView, useRoute } from 'vue-router';
 
 const route = useRoute();
 
 //computed continuously updates the values if the parameters change
 
-const courseId = computed(() => route.params.courseId);
-const moduleId = computed(() => route.params.moduleId);
-const lessonId = computed(() => route.params.lessonId);
+const courseId = computed(() => parseInt(route.params.courseId));
+const moduleId = computed(() => parseInt(route.params.moduleId));
+const lessonId = computed(() => parseInt(route.params.lessonId));
 
 </script>
 
