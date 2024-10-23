@@ -7,9 +7,7 @@ export const useCoursesStore = defineStore('courses', () => {
 
 	function setCourses(courseData, courseId) {
 		courses.value = courseData[0].courses;
-		console.log(courses.value);
 		course.value = courses.value.find((course) => course.id == courseId);
-		console.log(course.value);
 	}
 
 	const getModulesList = computed(() => {
